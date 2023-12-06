@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --text-color-dark: rgb(230, 230, 250);
+    --dark-mode: rgb(41, 41, 48);
+    --light-mode: blue;
+}
+.container{
+    /* background-color: Blue; */
+    max-width: 500px;
+    height: 600px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    transition: .3s ease-in-out;
+}
+h2{
+    margin-top: 8px;
+}
+div.icons{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 1rem;
+    margin-top: 1.5rem;
+}
+span.icon-cont{
+    gap: 1px;
+    display: flex;
+    background-color: rgba(176, 176, 204, 0.548);
+    border-radius: 30px;
+    padding: 0px 10px;
+}
+.icons span span{
+    /* background-color: white; */
+    color: rgb(243, 243, 250);
+    text-shadow: 0px 0px 2px rgb(238, 220, 237);
+    font-weight: bold;
+    font-size: 14px;
+    width: 50px;
+    height: 45px;
+    padding:10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .8s forward;
+}
+.light-btn{
+    margin-left: -6px;
+    background-color: rgb(2, 2, 248);
+    box-shadow: 0px 0px 7px 5px rgb(154, 154, 255) inset;
+}
+.dark-btn{
+    /* background-color: rgb(7, 7, 7); */
+    /* color: rgb(220, 220, 243) !important; */
+    background-color: rgb(41, 41, 48);
+    box-shadow: 0px 0px 7px 5px rgb(154, 154, 255) inset;
+    color: rgb(220, 220, 233) !important;
+    margin-right: -6px;
+}
+
+/* add this background colors using js */
+.dark-bg-cont{
+    background-color: var(--dark-mode);
+}
+.light-bg-cont{
+    background-color: var(--light-mode);
+}
+
+div.container p{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: ;
+    line-height: 2;
+}
+small{
+    text-align: end;
+    padding-right: 1.3rem;
+    margin-top: 4px;
+    font-size: 11px
+}
+.p-text-color{
+    color: var(--text-color-dark)
+}
+@media (max-width: 499px){
+    .container{
+        height: 600px;
+    }
+    div.icons span.icon-cont span{
+        width: 40px;
+        height: 35px;
+        font-size: 11px;
+    }
+    p{
+        font-size: 12px;
+    }
+    small{
+        font-size: 8px;
+    }
+}
